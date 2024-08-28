@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{89AD5C21-BBC1-4012-B7F3-8F7A4C6F096E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>JomareHospitalSystem</RootNamespace>
+    <AssemblyName>JomareHospitalSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DatabaseConfig.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddDoctorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddDoctorForm.Designer.cs">
+      <DependentUpon>AddDoctorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddPatientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddPatientForm.Designer.cs">
+      <DependentUpon>AddPatientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UserRegistration.Designer.cs">
+      <DependentUpon>UserRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EventForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EventForm.Designer.cs">
+      <DependentUpon>EventForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ToastFormcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ToastFormcs.Designer.cs">
+      <DependentUpon>ToastFormcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jomareClinicDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>jomareClinicDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="jomareClinicDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>jomareClinicDBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UC Folder\UCAddAppointment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC Folder\UCAddAppointment.Designer.cs">
+      <DependentUpon>UCAddAppointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC Folder\UCAppointment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC Folder\UCAppointment.Designer.cs">
+      <DependentUpon>UCAppointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC Folder\UCAppointmentList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC Folder\UCAppointmentList.Designer.cs">
+      <DependentUpon>UCAppointmentList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC Folder\UCBlank.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC Folder\UCBlank.Designer.cs">
+      <DependentUpon>UCBlank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC Folder\UCDashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC Folder\UCDashboard.Designer.cs">
+      <DependentUpon>UCDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC Folder\UCDays.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC Folder\UCDays.Designer.cs">
+      <DependentUpon>UCDays.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC Folder\UCDoctor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC Folder\UCDoctor.Designer.cs">
+      <DependentUpon>UCDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC Folder\UCDoctorProfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC Folder\UCDoctorProfile.Designer.cs">
+      <DependentUpon>UCDoctorProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC Folder\UCPatient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC Folder\UCPatient.Designer.cs">
+      <DependentUpon>UCPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC Folder\UCPatientProfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC Folder\UCPatientProfile.Designer.cs">
+      <DependentUpon>UCPatientProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC Folder\UCUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC Folder\UCUser.Designer.cs">
+      <DependentUpon>UCUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC Folder\UCUserProfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC Folder\UCUserProfile.Designer.cs">
+      <DependentUpon>UCUserProfile.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddDoctorForm.resx">
+      <DependentUpon>AddDoctorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddPatientForm.resx">
+      <DependentUpon>AddPatientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserRegistration.resx">
+      <DependentUpon>UserRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EventForm.resx">
+      <DependentUpon>EventForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ToastFormcs.resx">
+      <DependentUpon>ToastFormcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UC Folder\UCAddAppointment.resx">
+      <DependentUpon>UCAddAppointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC Folder\UCAppointment.resx">
+      <DependentUpon>UCAppointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC Folder\UCAppointmentList.resx">
+      <DependentUpon>UCAppointmentList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC Folder\UCBlank.resx">
+      <DependentUpon>UCBlank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC Folder\UCDashboard.resx">
+      <DependentUpon>UCDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC Folder\UCDays.resx">
+      <DependentUpon>UCDays.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC Folder\UCDoctor.resx">
+      <DependentUpon>UCDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC Folder\UCDoctorProfile.resx">
+      <DependentUpon>UCDoctorProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC Folder\UCPatient.resx">
+      <DependentUpon>UCPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC Folder\UCPatientProfile.resx">
+      <DependentUpon>UCPatientProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC Folder\UCUser.resx">
+      <DependentUpon>UCUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC Folder\UCUserProfile.resx">
+      <DependentUpon>UCUserProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="jomareClinicDBDataSet.xsc">
+      <DependentUpon>jomareClinicDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="jomareClinicDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>jomareClinicDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="jomareClinicDBDataSet.xss">
+      <DependentUpon>jomareClinicDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="jomareClinicDBDataSet1.xsc">
+      <DependentUpon>jomareClinicDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="jomareClinicDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>jomareClinicDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="jomareClinicDBDataSet1.xss">
+      <DependentUpon>jomareClinicDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="jomareClinicDB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="jomareClinicDB_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>jomareClinicDB.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\Info.png" />
+    <None Include="Resources\Error.png" />
+    <None Include="Resources\Check Mark.png" />
+    <None Include="Resources\Cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
