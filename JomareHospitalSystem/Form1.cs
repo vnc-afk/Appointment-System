@@ -152,7 +152,7 @@ namespace JomareHospitalSystem
         private void btnLogout_Click(object sender, EventArgs e)
         {
             this.Hide();
-            showToast("SUCCESS", "Logout successfully.");
+            showToast("SUCCESS", "You Logout successfully.");
             LoginForm login = new LoginForm();
             login.Show();
         }   
